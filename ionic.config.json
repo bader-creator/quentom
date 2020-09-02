@@ -1,5 +1,7 @@
 {
   "name": "QoEntum",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

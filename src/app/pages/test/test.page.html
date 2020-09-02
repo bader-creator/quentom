@@ -1,0 +1,53 @@
+<ion-header>
+    <ion-toolbar color="light">
+        <ion-buttons slot="start" style="background-color: #25368c;border-bottom-right-radius: 36px;padding-bottom: 18px;margin-left: 0px;width: 73px;">
+            <ion-menu-button><img style="width: 23px;margin-left: 17px; margin-top: 19px;" src="../../../assets/img/home/menu.png"></ion-menu-button>
+        </ion-buttons>
+        <ion-title style="color:#25368c;font-family: Roboto;margin-left: -50px;font-weight: 700;line-height: 58px;text-align: center;">
+            <img style="width: 31px;margin-bottom: 5px;margin-right: 10px;" src="../../../assets/img/home/wifi.png "> Open wifi Network
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ng-container *ngIf='!isenabled '>
+        <ion-buttons style="justify-content: center;margin-top: 51px;width:210px;margin-right: auto;margin-left: auto;" (click)="ShowButton()">
+            <img class="bt" src="../../../assets/img/test/button.png ">
+            <img class="start" src="../../../assets/img/test/start.png ">
+            <p class="launch">Launch</p>
+        </ion-buttons>
+    </ng-container>
+    <ng-container *ngIf='isenabled '>
+        <ion-buttons style="justify-content: center;margin-top: 51px;width:210px;margin-right: auto;margin-left: auto;" (click)="ShowButton()">
+            <img class="bt" src="../../../assets/img/test/button1.png ">
+            <img class="start" src="../../../assets/img/test/stop.png ">
+            <p class="launch">Stop</p>
+        </ion-buttons>
+    </ng-container>
+</ion-content>
+
+<ion-footer no-padding no-marging>
+    <!-------tabss--------->
+    <ion-segment no-padding no-marging style="font-size: 10px; " [(ngModel)]="segment " style="background-color: #25368c;border-top-left-radius: 40px; ">
+        <ion-segment-button value="dashboard " routerDirection="forward " [routerLink]=" '/dashboard' ">
+            <img style=" width: 38px;margin-bottom: -11px;margin-top: 15px; " src="../../../assets/img/home/dashboard.png ">
+            <ion-label class="seglabel ">Dashboard</ion-label>
+        </ion-segment-button>
+
+        <ion-segment-button value="map " routerDirection="forward " [routerLink]=" '/action' ">
+            <img style=" width: 38px;margin-bottom: -11px;margin-top: 15px; " src="../../../assets/img/home/map.png ">
+            <ion-label class="seglabel ">Map</ion-label>
+        </ion-segment-button>
+
+        <ion-segment-button value="params " routerDirection="forward " [routerLink]=" '/demande' ">
+            <img style="width: 38px;margin-bottom: -11px;margin-top: 15px; " src="../../../assets/img/home/params.png ">
+            <ion-label class="seglabel ">Parameters</ion-label>
+        </ion-segment-button>
+
+        <ion-segment-button value="history " routerDirection="forward " [routerLink]=" '/profil' ">
+            <img style="width: 38px;margin-bottom: -11px;margin-top: 15px; " src="../../../assets/img/home/history.png ">
+            <ion-label class="seglabel ">History</ion-label>
+        </ion-segment-button>
+    </ion-segment>
+    <!-------tabss--------->
+</ion-footer>

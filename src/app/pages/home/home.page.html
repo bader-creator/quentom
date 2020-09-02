@@ -1,0 +1,113 @@
+<ion-header>
+    <ion-toolbar color="light">
+        <ion-buttons slot="start" style="background-color: #25368c;border-bottom-right-radius: 36px;padding-bottom: 18px;margin-left: 0px;width: 73px;">
+            <ion-menu-button><img style="width: 23px;margin-left: 17px; margin-top: 19px;" src="../../../assets/img/home/menu.png"></ion-menu-button>
+        </ion-buttons>
+        <ion-title style="color:#25368c;font-family: Roboto;
+        font-weight: 700;
+        line-height: 58px;
+        text-align: center;"><img style="width: 31px;margin-bottom: 5px;
+        margin-right: 10px;" src="../../../assets/img/home/wifi.png ">Open wifi Network</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="banner">
+        <div class="container">
+            <div class="row " style="margin-top: 35px;">
+                <div class="col-6 ">
+                    <div class="card left" [ngStyle]="{'background-color': buttonColor}" (click)="someAction(1)">
+                        <div class="card-body text-center " routerDirection="forward" [routerLink]="'/test'">
+                            <img src="../../../assets/img/home/fulltest.png">
+                            <img src="../../../assets/img/home/cc.png" style="height: 78%;width: 100%; top: 29%; left: -1%;">
+                            <label style="position: absolute;bottom: 24px;left: 10%;" class="card-title">Full Test</label>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 ">
+                    <div class="card right" [ngStyle]="{'background-color': buttonColor}" (click)="someAction(2)">
+                        <div class="card-body text-center " routerDirection="forward" [routerLink]="'/test'">
+                            <img src="../../../assets/img/home/sim.png">
+                            <img src="../../../assets/img/home/cc.png" style="height: 78%;width: 100%; top: 29%; left: -1%;">
+                            <label style="position: relative;bottom: 4%;left: -30%;" class="card-title ">Info SIM</label>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row " style="margin-top: 35px;">
+                <div class="col-6 ">
+                    <div class="card left" [ngStyle]="{'background-color': buttonColor}" (click)="someAction(3)">
+                        <div class="card-body text-center " routerDirection="forward" [routerLink]="'/test'">
+                            <img src="../../../assets/img/home/folder.png">
+                            <img src="../../../assets/img/home/cc.png" style="height: 78%;width: 100%; top: 29%; left: -1%;">
+                            <label style="position: absolute;bottom: 24px;left: 10%;" class="card-title">Test FTP</label>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card right" [ngStyle]="{'background-color': buttonColor}" (click)="someAction(4)">
+                        <div class="card-body text-center " routerDirection="forward" [routerLink]="'/test'">
+                            <img src="../../../assets/img/home/http.png">
+                            <img src="../../../assets/img/home/cc.png" style="height: 78%;width: 100%; top: 29%; left: -1%;">
+                            <label style="position: relative;bottom: 4%;left: -26%;" class="card-title">Test HTTP</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 35px;">
+                <div class="col-6 ">
+                    <div class="card left" [ngStyle]="{'background-color': buttonColor}" (click)="someAction(5)">
+                        <div class="card-body text-center " routerDirection="forward" [routerLink]="'/test'">
+                            <img src="../../../assets/img/home/sms_voice.png" style="width: 32%;">
+                            <img src="../../../assets/img/home/cc.png" style="height: 78%;width: 100%; top: 29%; left: -1%;">
+
+                            <label style="position: absolute;bottom: 24px;left: 10%;" class="card-title">Test SMS/Voice</label>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 ">
+                    <div class="card right" [ngStyle]="{'background-color': buttonColor}" (click)="someAction(6)">
+                        <div class="card-body text-center " routerDirection="forward" [routerLink]="'/test'">
+                            <img src="../../../assets/img/home/video .png">
+                            <img src="../../../assets/img/home/cc.png" style="height: 78%;width: 100%; top: 29%; left: -1%;">
+                            <label style="position: relative;bottom: 4%;left: -16%;" class="card-title">Test Streaming</label>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ion-content>
+
+<ion-footer no-padding no-marging>
+    <!-------tabss--------->
+    <ion-segment no-padding no-marging style="font-size: 10px; " [(ngModel)]="segment " style="background-color: #25368c;border-top-left-radius: 40px; ">
+        <ion-segment-button value="dashboard " routerDirection="forward " [routerLink]=" '/dashboard' ">
+            <img style=" width: 38px;margin-bottom: -11px;margin-top: 15px; " src="../../../assets/img/home/dashboard.png ">
+            <ion-label class="seglabel ">Dashboard</ion-label>
+        </ion-segment-button>
+
+        <ion-segment-button value="map " (click)="GoesTOFeedBack()">
+            <img style=" width: 38px;margin-bottom: -11px;margin-top: 15px; " src="../../../assets/img/home/map.png ">
+            <ion-label class="seglabel ">Map</ion-label>
+        </ion-segment-button>
+
+        <ion-segment-button value="params " routerDirection="forward " [routerLink]=" '/demande' ">
+            <img style="width: 38px;margin-bottom: -11px;margin-top: 15px; " src="../../../assets/img/home/params.png ">
+            <ion-label class="seglabel ">Parameters</ion-label>
+        </ion-segment-button>
+
+        <ion-segment-button value="history " routerDirection="forward " [routerLink]=" '/profil' ">
+            <img style="width: 38px;margin-bottom: -11px;margin-top: 15px; " src="../../../assets/img/home/history.png ">
+            <ion-label class="seglabel ">History</ion-label>
+        </ion-segment-button>
+    </ion-segment>
+    <!-------tabss--------->
+</ion-footer>

@@ -1,0 +1,56 @@
+.net {
+    color: #25368c;
+    position: absolute;
+    font-family: "Roboto";
+    top: 35px;
+    right: 37px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    .net {
+        font-size: 18px;
+        top: 29px;
+        right: 23px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .net {
+        font-size: 15px;
+        top: 9px;
+        right: 0px;
+    }
+}
+
+.react {
+    width: 23%;
+    float: left;
+    margin-top: 9px;
+}
+
+ion-content {
+    justify-content: center;
+}
+
+.btn-block-left {
+    width: 106%;
+    border-radius: 35px;
+    background: #e2e2ea;
+    position: relative;
+}
+
+.btn-block-right {
+    width: 106%;
+    border-radius: 35px;
+    background: #87ceea;
+    position: relative;
+}
+
+.btn-block-left label {
+    top: 18%;
+    left: 34%;
+    position: absolute;
+    font-size: 156%;
+}

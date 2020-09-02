@@ -1,3 +1,43 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+    <ion-menu side="start" menuId="custom" class="my-custom-menu" contentId="content1" style="border-bottom-right-radius: 50px;height: 86%;width:304px;">
+        <ion-content>
+            <img src="../../../assets/img/home/out.png" style="    width: 36px;position: absolute;left: 19px;top: 9px;">
+            <ion-list style="margin-top: 40px;">
+                <ion-item class="title"><img src="../../../assets/img/home/fulltest.png" style="width: 25px;margin-left: 20px;margin-right: 15px;">Full Test
+                    <img src="../../../assets/img/home/flesh.png" style="width: 41px; position: absolute;right: 8px;">
+                </ion-item>
+
+                <ion-item class="title"><img src="../../../assets/img/home/sim.png" style="width: 25px;margin-left: 20px;margin-right: 15px;"> Info SIM
+                    <img src="../../../assets/img/home/flesh.png" style="width: 41px; position: absolute;right: 8px;">
+                </ion-item>
+
+                <ion-item class="title"><img src="../../../assets/img/home/folder.png" style="width: 25px;margin-left: 20px;margin-right: 15px;">Test FTP
+                    <img src="../../../assets/img/home/flesh.png" style="width: 41px; position: absolute;right: 8px;">
+                </ion-item>
+
+
+                <ion-item class="title"><img src="../../../assets/img/home/http.png" style="width: 25px;margin-left: 20px;margin-right: 15px;">Test HTTP
+                    <img src="../../../assets/img/home/flesh.png" style="width: 41px; position: absolute;right: 8px;">
+                </ion-item>
+
+                <ion-item class="title"><img src="../../../assets/img/home/voice.png" style="width: 25px;margin-left: 20px;margin-right: 15px;">Test SMS
+                    <img src="../../../assets/img/home/flesh.png" style="width: 41px; position: absolute;right: 8px;">
+                </ion-item>
+
+                <ion-item class="title"><img src="../../../assets/img/home/voicesms.png" style="width: 25px;margin-left: 20px;margin-right: 15px;">Test Voice Over IP
+                    <img src="../../../assets/img/home/flesh.png" style="width: 41px; position: absolute;right: 8px;">
+                </ion-item>
+
+                <ion-item class="title"><img src="../../../assets/img/home/video .png" style="width: 25px;margin-left: 20px;margin-right: 15px;">Test Streaming
+                    <img src="../../../assets/img/home/flesh.png" style="width: 41px; position: absolute;right: 8px;">
+                </ion-item>
+
+
+                <ion-item class="title"><img src="../../../assets/img/home/info.png" style="width: 25px;margin-left: 20px;margin-right: 15px;">Information
+                    <img src="../../../assets/img/home/flesh.png" style="width: 41px; position: absolute;right: 8px;">
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="content1"></ion-router-outlet>
 </ion-app>

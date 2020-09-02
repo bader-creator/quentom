@@ -9,18 +9,61 @@
  * https://ionicframework.com/docs/layout/global-stylesheets
  */
 
+
 /* Core CSS required for Ionic components to work properly */
+
 @import "~@ionic/angular/css/core.css";
 
 /* Basic CSS for apps built with Ionic */
+
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
 @import '~@ionic/angular/css/display.css';
 
 /* Optional CSS utils that can be commented out */
+
 @import "~@ionic/angular/css/padding.css";
 @import "~@ionic/angular/css/float-elements.css";
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+.Feedback-modal {
+    position: relative;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 312px;
+    margin-top: 200px;
+    border-radius: 28px;
+    border: double;
+}
+
+@media screen and (max-width: 470px) {
+    .Feedback-modal {
+        width: 90%;
+        height: 290px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .Feedback-modal {
+        height: 207px;
+    }
+}
+
+@media only screen and (min-height: 768px) and (min-width: 768px) {
+    .sc-ion-modal-md-h {
+        --height: 306px;
+    }
+}
+
+@media only screen and (min-height: 768px) and (min-width: 768px) {
+    .sc-ion-modal-ios-h {
+        --height: 306px;
+    }
+}
+
+menu-backdrop md backdrop-no-tappable hydrated show-backdrop {
+    display: none;
+}
